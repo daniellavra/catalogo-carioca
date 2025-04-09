@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #222;
+    color: #fff;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 8px;
+  }
+  
+  /* Produtos */
+  #catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Cartão de produto */
+  .produto {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .produto:hover {
+    transform: translateY(-5px);
+  }
+  
+  .produto img {
+    width: 20%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .produto h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  
+  .produto p {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: #666;
+  }
+  
+  .produto .preco {
+    font-weight: bold;
+    color: #111;
+    margin-top: 8px;
+  }
+  
+  /* Botão WhatsApp */
+  .whatsapp-btn {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #1eb152;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+  
